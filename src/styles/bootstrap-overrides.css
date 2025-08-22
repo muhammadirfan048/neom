@@ -1,0 +1,73 @@
+/* Design tokens mapped to Bootstrap CSS variables (v5.3+) */
+:root {
+  /* Brand palette */
+  --color-primary-gold: #EBC03F;
+  --color-primary-ink: #13100D;
+  --color-primary-white: #FFFFFF;
+  --color-primary-ivory: #F1EFE0;
+
+  /* Secondary palette */
+  --color-secondary-red: #E0403F;
+  --color-secondary-blue: #0D3BBA; /* please confirm: source listed #0D3BBA (5 digits) */
+  --color-secondary-orange: #EBC03F;
+  --color-secondary-green: #006B44;
+  --color-secondary-navy: #003865;
+
+  /* Bootstrap core semantic tokens */
+  --bs-primary: var(--color-primary-gold);
+  --bs-secondary: var(--color-secondary-navy);
+  --bs-success: var(--color-secondary-green);
+  --bs-danger: var(--color-secondary-red);
+  --bs-warning: var(--color-secondary-orange);
+  --bs-info: var(--color-secondary-blue);
+
+  --bs-body-bg: var(--color-primary-white);
+  --bs-body-color: var(--color-primary-ink);
+  --bs-link-color: var(--bs-primary);
+  --bs-link-hover-color: color-mix(in srgb, var(--bs-primary) 85%, black 15%);
+
+  /* Radii and shadows (adjust when tokens are available) */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.06);
+  --shadow-md: 0 4px 12px rgba(0,0,0,.08);
+  --shadow-lg: 0 12px 24px rgba(0,0,0,.12);
+
+  /* Container max widths to match tight Figma grids if needed */
+  --container-max: 1200px;
+}
+
+/* Component-level refinements aligned with brand */
+.btn-primary {
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: color-mix(in srgb, var(--bs-primary) 92%, black 8%);
+  --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-primary) 88%, black 12%);
+  --bs-btn-active-bg: color-mix(in srgb, var(--bs-primary) 80%, black 20%);
+  --bs-btn-active-border-color: color-mix(in srgb, var(--bs-primary) 76%, black 24%);
+  border-radius: var(--radius-md);
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: var(--bs-primary);
+  --bs-btn-hover-border-color: var(--bs-primary);
+  border-radius: var(--radius-md);
+}
+
+.form-control, .form-select {
+  border-radius: var(--radius-sm);
+  box-shadow: none;
+}
+
+.card {
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.navbar-brand img { height: 28px; }
+
+/* Utilities to constrain site width */
+.container-custom { max-width: var(--container-max); }

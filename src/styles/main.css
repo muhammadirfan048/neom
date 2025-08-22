@@ -1,0 +1,89 @@
+/* Global base styles */
+html, body { height: 100%; }
+body { font-synthesis-weight: none; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+
+/**** Layout ****/
+.site-section { padding-block: 2rem; }
+@media (min-width: 992px) { .site-section { padding-block: 3rem; } }
+
+/**** Theming helpers ****/
+.bg-ivory { background-color: var(--color-primary-ivory) !important; }
+.text-ink { color: var(--color-primary-ink) !important; }
+
+/**** Links ****/
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/**** Forms ****/
+label { font-weight: 600; }
+
+/**** Headers & Footers ****/
+#site-header, #site-footer { background: var(--color-primary-white); }
+
+/* ===== Auth Split Layout ===== */
+.auth-split { background: var(--color-primary-white); }
+.auth-hero { min-width: 50%; }
+.auth-hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.auth-hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(19,16,13,.85) 0%, rgba(19,16,13,.5) 40%, rgba(19,16,13,0) 70%); }
+.auth-hero-content { position: absolute; left: 2.5rem; bottom: 2.5rem; right: 2.5rem; }
+.hero-dot { width: 32px; height: 4px; border-radius: 4px; display: inline-block; }
+
+.auth-form { background: var(--color-primary-white); }
+.auth-form .input-group-text { border-right: 0; }
+.auth-form .input-group .form-control:focus { box-shadow: none; }
+
+.container { width: 80%; margin: 0 auto;}
+
+@media (max-width: 991.98px) {
+  .auth-hero { display: none !important; }
+}
+
+.register-hero .auth-hero-overlay { 
+  background: linear-gradient(90deg, rgba(19,16,13,.9) 0%, rgba(19,16,13,.7) 50%, rgba(19,16,13,0) 80%); 
+}
+
+/* ===== Register Page Layout ===== */
+.register-container { min-height: 100vh; background: var(--color-primary-white); }
+.register-form .form-label { color: var(--color-primary-ink); }
+.register-form .form-control, .register-form .form-select { border-radius: var(--radius-sm); }
+.register-form .btn-primary { font-size: 1rem; }
+
+/* ===== Car Parking Hero ===== */
+.car-hero { overflow: hidden; }
+.car-hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.car-hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(19,16,13,.88) 0%, rgba(19,16,13,.55) 38%, rgba(19,16,13,0) 68%); }
+/* Booking card polishing to match mock */
+.booking-card { border-radius: 16px; box-shadow: 0 24px 48px rgba(0,0,0,.25); }
+.booking-card .form-control,
+.booking-card .form-select { height: 48px; padding: .5rem .75rem; border-color: rgba(0,0,0,.1); }
+.booking-card .input-group-text { border-right: 0; background: #fff; color: #6c757d; height: 48px; }
+.booking-card .form-control { border-left: 0; }
+.booking-card label.form-label { color: #6c757d; }
+.booking-card .btn { border-radius: 10px; }
+.hero-dot { width: 48px; height: 6px; border-radius: 6px; display: inline-block; }
+
+/* ===== Progress Steps ===== */
+.step-circle { 
+  width: 32px; 
+  height: 32px; 
+  border-radius: 50%; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-weight: 600; 
+  font-size: 14px; 
+}
+
+/* ===== Booking Pages Layout ===== */
+.booking-page { min-height: 100vh; background: #f8f9fa; }
+.booking-sidebar { background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,.1); }
+.booking-main { background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,.1); }
+
+/* ===== Parking Card Gradient ===== */
+.parking-card-gradient {
+  background: rgba(241, 239, 224, 0.26);
+  border: 1px solid #ced4da;
+}
+.light-gray-color {
+  color: rgba(128, 136, 151, 1);
+}

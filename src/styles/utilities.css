@@ -1,0 +1,30 @@
+/* Brand-based utility classes */
+.u-bg-ink { background-color: var(--color-primary-ink) !important; }
+.u-bg-ivory { background-color: var(--color-primary-ivory) !important; }
+.u-text-ink { color: var(--color-primary-ink) !important; }
+.u-text-ivory { color: var(--color-primary-ivory) !important; }
+.u-text-gold { color: var(--color-primary-gold) !important; }
+
+/* Spacing helpers mapped to 4/8 scale */
+:root { --space-1: .25rem; --space-2: .5rem; --space-3: .75rem; --space-4: 1rem; --space-6: 1.5rem; --space-8: 2rem; }
+.gap-6 { gap: var(--space-6) !important; }
+.gap-8 { gap: var(--space-8) !important; }
+
+/* Radius utilities */
+.rounded-sm { border-radius: var(--radius-sm) !important; }
+.rounded-md { border-radius: var(--radius-md) !important; }
+.rounded-lg { border-radius: var(--radius-lg) !important; }
+
+/* Shadow utilities */
+.shadow-brand-sm { box-shadow: var(--shadow-sm) !important; }
+.shadow-brand-md { box-shadow: var(--shadow-md) !important; }
+.shadow-brand-lg { box-shadow: var(--shadow-lg) !important; }
+
+/* Aspect-ratio utility for images/cards */
+.ar-16x9 { aspect-ratio: 16/9; }
+.ar-4x3 { aspect-ratio: 4/3; }
+.ar-1x1 { aspect-ratio: 1/1; }
+
+/* Container helpers */
+.container-narrow { max-width: 720px; margin-left: auto; margin-right: auto; }
+.container-wide { max-width: 1320px; margin-left: auto; margin-right: auto; }
