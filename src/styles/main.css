@@ -65,8 +65,8 @@ label { font-weight: 600; }
 
 /* ===== Progress Steps ===== */
 .step-circle { 
-  width: 32px; 
-  height: 32px; 
+  width: 28px; 
+  height: 28px; 
   border-radius: 50%; 
   display: flex; 
   align-items: center; 
