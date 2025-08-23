@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Personal Information • NEOM Parking</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="../../styles/bootstrap-overrides.css" rel="stylesheet" />
+    <link href="../../styles/utilities.css" rel="stylesheet" />
+    <link href="../../styles/main.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body class="bg-light">
+    <header class="bg-white border-bottom">
+      <div
+        class="container py-3 d-flex justify-content-between align-items-center"
+      >
+        <a
+          href="./select-dates.html"
+          class="text-decoration-none d-flex align-items-center gap-2"
+        >
+          <i class="bi bi-car-front-fill text-warning fs-4"></i>
+          <span class="fw-semibold text-dark fs-4">Car Parking</span>
+        </a>
+        <div class="d-flex gap-2">
+          <a
+            class="btn btn-sm btn-outline-secondary"
+            href="../auth/sign-in.html"
+            >Sign In</a
+          >
+          <a class="btn btn-sm btn-warning" href="../auth/register.html"
+            >Sign Up</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <div class="bg-white border-bottom">
+      <div class="container py-3">
+        <div
+          class="d-flex align-items-center justify-content-center flex-column flex-md-row gap-3"
+        >
+          <div class="d-flex align-items-center">
+            <div class="step-circle bg-success text-white">1</div>
+            <span class="ms-2 fw-semibold text-success">Select Dates</span>
+          </div>
+          <i class="bi bi-chevron-right d-none d-md-block text-muted"></i>
+          <i class="bi bi-chevron-down d-block d-md-none text-muted"></i>
+          <div class="d-flex align-items-center">
+            <div class="step-circle bg-success text-white">2</div>
+            <span class="ms-2 text-success fw-semibold">Parking Space</span>
+          </div>
+          <i class="bi bi-chevron-right d-none d-md-block text-muted"></i>
+          <i class="bi bi-chevron-down d-block d-md-none text-muted"></i>
+          <div class="d-flex align-items-center">
+            <div class="step-circle bg-success text-white">3</div>
+            <span class="ms-2 text-success fw-semibold"
+              >Personal Information</span
+            >
+          </div>
+          <i class="bi bi-chevron-right d-none d-md-block text-muted"></i>
+          <i class="bi bi-chevron-down d-block d-md-none text-muted"></i>
+          <div class="d-flex align-items-center">
+            <div class="step-circle bg-dark text-white">4</div>
+            <span class="ms-2 text-dark fw-semibold">Payment</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="bg-white rounded-3 p-4 shadow-sm">
+            <h5 class="mb-4">Booking Dates</h5>
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Terminal 1</label>
+            </div>
+            <div class="mb-4">
+              <div
+                class="bg-warning rounded-1 text-dark py-5 d-flex justify-content-center align-items-center flex-column mb-2"
+              >
+                <div class="small fw-semibold mb-2">Entry Date and Time</div>
+                <div class="fw-bold fs-5">06-07-2025, 08:00</div>
+              </div>
+              <div
+                class="bg-white border p-3 rounded-1 py-5 d-flex justify-content-center align-items-center flex-column mb-2"
+              >
+                <div class="small fw-semibold">Exit Date and Time</div>
+                <div class="fw-bold">08-07-2025, 23:59</div>
+              </div>
+            </div>
+            <div class="mb-3 border-top">
+              <div class="small fw-semibold mt-3">Booking Dates</div>
+              <div class="text-muted">1 day</div>
+            </div>
+            <div class="mb-3 border-top">
+              <div class="small fw-semibold mt-3">Order Summary</div>
+            </div>
+            <div class="mb-3 d-flex justify-content-between">
+              <span>Included 5% VAT</span>
+              <span>SAR 2.62</span>
+            </div>
+            <div class="border-top">
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-semibold pt-3">Total</span>
+                <span class="fw-bold fs-4 text-dark pt-3 border-top border-dark"
+                  >SAR 57.62</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="bg-white rounded-3 p-4 shadow-sm">
+            <h4 class="mb-4">Payment Details</h4>
+            <form>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label class="form-label text-muted fw-normal"
+                    >Card holder name</label
+                  >
+                  <input type="text" class="form-control input-bg" />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label text-muted fw-normal"
+                    >Card number (as it appears on the card)</label
+                  >
+                  <input type="text" class="form-control input-bg" />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label class="form-label text-muted fw-normal"
+                    >Expiration date</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control input-bg"
+                    placeholder="MM / YY"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label text-muted fw-normal">CVV</label>
+                  <input
+                    type="email"
+                    class="form-control input-bg"
+                    placeholder="CVV"
+                  />
+                </div>
+              </div>
+
+              <!-- Terms and Marketing Preferences -->
+              <div class="mb-4">
+                <div class="form-check mb-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="terms"
+                    checked
+                    required
+                  />
+                  <label class="form-check-label fw-normal small" for="terms">
+                    I understand and agree with the
+                    <a
+                      href="#"
+                      class="fw-semibold text-dark text-decoration-underline"
+                      >terms and conditions</a
+                    >
+                  </label>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label fw-semibold small"
+                    >Marketing preferences</label
+                  >
+                  <p class="mb-2 small">
+                    We'd love to send you the latest Dubai Airports updates by
+                    email including exclusive offers and new services to improve
+                    your travel experience
+                  </p>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="marketingNo"
+                      value="no"
+                    />
+                    <label
+                      class="form-check-label fw-normal small"
+                      for="marketingNo"
+                    >
+                      <b>No thanks,</b> I don't want to hear about Dubai
+                      Airports' offers and services
+                    </label>
+                    <p class="mt-2 small text-muted text-center">
+                      Your booking confirmation will be emailed to you
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="d-flex justify-content-between mt-4">
+            <a href="./parking-space.html" class="btn btn-secondary">
+              <i class="bi bi-chevron-left"></i> Parking Space
+            </a>
+            <!-- Payment button -->
+            <button
+              id="paymentBtn"
+              class="btn btn-success d-inline-block text-white"
+              disabled
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Payment <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-md"
+      >
+        <div class="modal-content">
+          <div class="modal-body px-4">
+            <div class="modal-header border-0"></div>
+            <div class="position-relative mb-5">
+              <div
+                class="check-circle mx-auto d-flex justify-content-center align-items-center text-white"
+              >
+                <i class="bi bi-check fs-1"></i>
+              </div>
+              <h1
+                class="modal-title text-center fs-4 my-3 w-75 mx-auto"
+                id="exampleModalLabel"
+              >
+                Your Order is Successfully Completed
+              </h1>
+              <div class="close-button">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <p
+                class="text-center text-muted border-bottom w-75 small mx-auto"
+              >
+                Your booking confirmation will be emailed to you
+              </p>
+            </div>
+            <p class="fw-semibold my-2 small">
+              Terminal 1: <span class="fw-normal">Car Park A</span>
+            </p>
+            <p class="fw-semibold pt-2 small">
+              Johan Smith <br />
+              johansmith@gmail.com <br />+966 645 264 6235
+            </p>
+            <p class="fw-semibold pt-2 small">
+              Plate No:
+              <span class="fw-normal">Re 913 <br />Riyadh, Saudi Arabia</span>
+            </p>
+            <p class="fw-semibold my-2 small">
+              Entry Date & Time:
+              <span class="fw-normal">06-07-2025, 08:00</span>
+            </p>
+            <p class="fw-semibold small">
+              Exite Date & Time:
+              <span class="fw-normal">08-07-2025, 23:59</span>
+            </p>
+            <p class="fw-semibold my-2 small">
+              <span class="fw-normal">Amount Due: </span>
+              SAR 57.62
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Enable/Disable Payment Button -->
+    <script>
+      const marketingCheckbox = document.getElementById("marketingNo");
+      const paymentBtn = document.getElementById("paymentBtn");
+
+      marketingCheckbox.addEventListener("change", function () {
+        paymentBtn.disabled = !this.checked;
+      });
+    </script>
+  </body>
+</html>
